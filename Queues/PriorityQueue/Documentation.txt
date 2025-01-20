@@ -1,0 +1,56 @@
+**Priority Queue Documentation**
+
+What is a Priority Queue?
+
+A priority queue is an abstract data structure similar to a regular queue or stack but with an added feature: each element is associated with a "priority." In a priority queue, elements with higher priority are dequeued before elements with lower priority, regardless of their order of insertion. If two elements have the same priority, they are usually dequeued according to their order of arrival (though this behavior may vary based on the implementation).
+
+Characteristics of Priority Queue
+
+Priority Assignment: Each element is assigned a priority value.
+
+Ordering by Priority: The queue is ordered by priority, not strictly by the order of insertion.
+
+**Operations:**
+
+Insert (Enqueue): Adds an element to the queue with an associated priority.
+
+Delete (Dequeue): Removes the element with the highest priority (or lowest, depending on the implementation).
+
+Implementation Structures: Priority queues can be implemented using heaps, binary search trees, or unsorted/sorted arrays.
+
+**Types of Priority Queues**
+
+Min-Priority Queue: The element with the lowest priority value is served first.
+
+Max-Priority Queue: The element with the highest priority value is served first.
+
+
+__Case Study: Email Spam Detection Using Bayesian Filtering__
+
+Priority queues help optimize Bayesian spam filtering systems, which classify emails as spam or not based on probabilities.
+
+Scenario:
+
+An email service provider processes millions of emails daily, aiming to filter out spam with minimal false positives.
+
+Implementation:
+
+Each email is broken into tokens (e.g., words, phrases) and assigned a probability of being spam based on prior data.
+
+Tokens are stored in a priority queue, prioritized by their spam probability.
+
+The filter examines the most indicative tokens (highest priority) to make a classification decision.
+
+Emails with a cumulative probability above a threshold are marked as spam.
+
+Benefits:
+
+Improves accuracy by focusing on the most relevant indicators of spam.
+
+Handles large datasets efficiently when integrated with a priority queue.
+
+Challenges:
+
+Requires continuous updates to the priority queue as new spam trends emerge.
+
+Balancing false positives and false negatives can be complex.
