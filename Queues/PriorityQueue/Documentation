@@ -24,6 +24,11 @@ Min-Priority Queue: The element with the lowest priority value is served first.
 
 Max-Priority Queue: The element with the highest priority value is served first.
 
+Example:
+Find the largest M items in a stream of N items.
+- Fraud detection
+
+solution- Organize the data to store top transactions based on highest amount.
 
 __Case Study: Email Spam Detection Using Bayesian Filtering__
 
